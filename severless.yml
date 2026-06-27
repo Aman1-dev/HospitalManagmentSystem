@@ -1,0 +1,25 @@
+service: hospital-email-service
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.11
+  stage: dev
+  region: ap-south-1
+
+  environment:
+    EMAIL: moryaaman06@gmail.com
+    APP_PASSWORD: Amankumar_26165537
+
+functions:
+  sendEmail:
+    handler: handler.send
+
+    events:
+      - httpApi:
+          path: /send-email
+          method: POST
+
+plugins:
+  - serverless-offline

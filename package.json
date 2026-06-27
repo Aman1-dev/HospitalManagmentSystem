@@ -1,0 +1,17 @@
+{
+  "name": "email_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serverless offline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "serverless": "^3.40.0",
+    "serverless-offline": "^14.7.4"
+  }
+}
